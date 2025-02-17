@@ -2,7 +2,7 @@
 	"name": "sdas",
 	"version": "1.1.2",
 	"scripts": {
-		"start": "cd web-app && npm run start",
+		"start": "cd sdas-web-app && npm run start",
 		"build": "python3 build.py",
 		"build.web": "python3 build.py --web",
 		"build.deploy": "python3 build.py --deploy",

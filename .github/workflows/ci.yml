@@ -33,13 +33,13 @@ jobs:
                   installer-parallel: true
 
             - name: Install dependencies
-              working-directory: web-app
+              working-directory: sdas-web-app
               run: |
                 npm install
                 npm install @types/react-router-dom@5.1.7 --save-dev
 
             - name: web-app build
-              working-directory: web-app
+              working-directory: sdas-web-app
               env:
                   CI: ''
               run: npm run build
