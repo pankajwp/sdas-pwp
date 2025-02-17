@@ -33,7 +33,7 @@ def change_dir_with_return(dir):
 
 def build_web_app():
 
-    return_dir = change_dir_with_return("./web-app")
+    return_dir = change_dir_with_return("./sdas-web-app")
     cmd = [sys.executable, "build.py"]
     proc = subprocess.run(cmd, stderr=subprocess.STDOUT)
     exit_on_failure(proc.returncode, "Web app build failed")
