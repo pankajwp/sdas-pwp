@@ -37,7 +37,7 @@ export class AppStack extends cdk.Stack {
 	constructor(scope: Construct, id: string, props: AppStackProps) {
 		super(scope, id, props);
 
-		const webAppBuildPath = '../sdas-web-app/build';
+		const webAppBuildPath = '../sdas-web-app/dist';
 		const awsAccountId = cdk.Stack.of(this).account;
 		const awsRegion = cdk.Stack.of(this).region;
 
